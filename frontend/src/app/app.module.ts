@@ -10,13 +10,18 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSliderModule} from '@angular/material/slider';
 
 import { UsersComponent } from './users/users.component';
+import { MoviesComponent } from './movies/movies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +31,9 @@ import { UsersComponent } from './users/users.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
+    MatListModule,
+    MatIconModule,
+    MatSliderModule,
     HttpClientModule
   ],
   providers: [],

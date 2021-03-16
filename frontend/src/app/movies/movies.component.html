@@ -1,0 +1,11 @@
+<h2 style="padding-top: 30px; text-align: center;">Hello {{user | uppercase}}, please rate your movies!</h2>
+<mat-list role="list">
+    <mat-list-item *ngFor="let movie of movies">
+        <mat-icon color="accent" style="padding-right:15px;">movie</mat-icon>
+        <span>{{movie.name | uppercase}}</span>
+        <span style="margin-left: 5px; font-style: italic; font-size: smaller;">{{movie.genre}}</span>
+        <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="1" min="0" max="5"
+        style="margin-left: 10px;"></mat-slider>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>

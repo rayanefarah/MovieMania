@@ -6,7 +6,7 @@
         <mat-form-field class="input">
             <input matInput placeholder="Email" #Email>
         </mat-form-field>
-        <button mat-raised-button color="primary" (click)="addUser(Name.value, Email.value)">
+        <button mat-raised-button color="primary" (click)="addUser(Name.value, Email.value)" routerLink="/users/{{Name.value}}">
             Create Profile
         </button>
     </mat-card-content>
